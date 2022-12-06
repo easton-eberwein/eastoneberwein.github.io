@@ -23,11 +23,11 @@ jobs:
     steps:
        - add_ssh_keys:
           fingerprints:
-            - "b4:54:d2:9d:cd:ed:90:21:f5:e3:f9:d1:85:4e:ba:50"
+            - "	b0:f2:89:af:e9:f2:c3:b2:86:02:32:85:3e:94:4f:bb"
        - run:
             name: Deploy Over SSH
             command: |
-              ssh -o StrictHostKeyChecking=no circleci@148.100.78.78 "sudo touch /tmp/testing.txt"
+              ssh -o StrictHostKeyChecking=no circleci@148.100.109.84 "sudo touch /tmp/testing.txt"
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
