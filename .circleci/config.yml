@@ -19,6 +19,9 @@ jobs:
           root: ./
           paths:
             - _site
+      - attach_workspace:
+          at: /tmp
+
 
   deploy:
     machine:
